@@ -17,6 +17,7 @@ imap <M-Down> :tabp<CR>
 imap <c-s> <esc><c-s>
 autocmd BufWritePre * :%s/\s\+$//e "delete whitespace before save
 
+nmap <silent> <Leader>p :NERDTreeToggle<CR>
 
 autocmd BufRead,BufNewFile *.cljs setlocal filetype=clojure
 autocmd BufRead,BufNewFile *.cljc setlocal filetype=clojure
